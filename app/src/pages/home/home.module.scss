@@ -1,0 +1,24 @@
+@import 'app/design/mixins';
+
+.wrapper {
+  padding: var(--indent-size-s);
+  display: grid;
+  grid-template-areas: 'links';
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 7rem;
+  justify-items: center;
+  align-content: center;
+}
+
+.links {
+  align-self: flex-start;
+  grid-area: links;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-bottom: var(--indent-size-s);
+  }
+}
+

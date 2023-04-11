@@ -1,0 +1,25 @@
+@mixin title($color: var(--dark-color), $size: var(--font-xl), $weight: 600) {
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: 1.2;
+}
+
+@mixin subtitle($color: var(--dark-color), $size: var(--font-m), $weight: 600) {
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: 1.1;
+}
+
+@mixin text($color: var(--dark-color), $size: var(--font-s), $weight: 400) {
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin subtext($color: var(--dark-color), $size: var(--font-xs), $weight: 400) {
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}

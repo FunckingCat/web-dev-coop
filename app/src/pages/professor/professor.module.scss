@@ -1,0 +1,90 @@
+@import 'app/design/mixins';
+
+.wrapper {
+  padding: var(--indent-size-s) 0;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+
+.section {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  & > * {
+    width: 100%;
+  }
+}
+
+.sectionName {
+  @include text();
+  text-align: center;
+  margin-bottom: var(--indent-size-xs);
+}
+
+.sectionValues {
+  display: flex;
+  gap: 5rem;
+}
+
+
+.tasks {
+  display: grid;
+  width: 100%;
+}
+
+.taskContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.template {
+  display: grid;
+  justify-items: center;
+}
+
+.templateContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+	box-shadow: inset 0px -1px 0px #C2C2C2;
+}
+
+.templateSlider {
+  width: 10rem;
+}
+
+.templateAmount {
+  width: 1rem;
+}
+
+.templatePreview {
+  display: grid;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center
+}
+
+.desc {
+  @include text();
+  margin-bottom: var(--indent-size-m);
+}
+
+@media (max-width: 900px) {
+  .templateContainer {
+    flex-direction: column;
+  }
+  .slider {
+    margin-bottom: var(--indent-size-s);
+  }
+}

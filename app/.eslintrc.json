@@ -1,0 +1,60 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:import/recommended",
+        "standard-with-typescript",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": ["tsconfig.json"]
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "react",
+        "import",
+        "@typescript-eslint"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            },
+            "typescript": {}
+        }
+    },
+    "rules": {
+        "@typescript-eslint/semi": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        "max-len": ["error", { "code": 10000 }],
+        "semi": ["error", "always"],
+        "no-unused-vars": "off",
+        "linebreak-style": "off",
+        "no-underscore-dangle": "off",
+        "no-param-reassign": "off",
+        "no-plusplus": "off",
+        "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".tsx"] }],
+        "react/function-component-definition": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "jsx-quotes": ["error", "prefer-double"],
+        "no-bitwise": "off"
+    }
+}

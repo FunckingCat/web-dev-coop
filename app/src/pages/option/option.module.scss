@@ -1,0 +1,22 @@
+.page {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.header {
+  margin-bottom: 35px;
+}
+
+.link {
+  color: blue;
+}
+
+.listItem {
+  & + .listItem {
+    padding-top: 10px;
+    border-top: 1px solid grey;
+  }
+}

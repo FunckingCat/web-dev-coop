@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    padding: var(--indent-size-s);
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+@media (max-width: 355px) {
+    .btn {
+        display: none;
+    }
+}

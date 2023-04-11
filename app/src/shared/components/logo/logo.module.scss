@@ -1,0 +1,12 @@
+@import 'app/design/mixins';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.caption {
+  @include title();
+  margin-left: var(--indent-size-xs);
+}

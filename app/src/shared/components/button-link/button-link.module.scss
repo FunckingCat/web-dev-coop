@@ -1,0 +1,8 @@
+@import 'app/design/mixins.scss';
+
+.link {
+  @include subtitle(var(--light-color));
+  padding: var(--indent-size-xs) var(--indent-size-l);
+  border-radius: var(--border-radius);
+  background: var(--dark-color);
+}

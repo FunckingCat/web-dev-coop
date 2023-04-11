@@ -1,0 +1,28 @@
+:root {
+    // цвета
+    --dark-color: #000000;
+    --semi-darl-color: #1A1A1A;
+    --gray-color: #E7E7E7;
+    --light-color: #FFFFFF;
+
+    // радиус скругления
+    --border-radius: 0.5rem;
+
+    // тень
+    --shadow: 0px 5px 7px -3px rgba(0, 0, 0, 0.6);
+
+    // отступы
+    --indent-size-xs: 0.5rem;
+    --indent-size-s: 1rem;
+    --indent-size-m: 2rem;
+    --indent-size-l: 3rem;
+    --indent-size-xl: 4rem;
+
+    // размеры шрифта
+    --font-xs: 0.75rem;
+    --font-s: 1rem;
+    --font-m: 1.25rem;
+    --font-l: 1.5rem;
+    --font-xl: 1.75rem;
+    --font-xxl: 2rem;
+}
